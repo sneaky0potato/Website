@@ -621,6 +621,10 @@ footer a:hover {
     .interests, .education {
         width: 100%;
         min-width: unset;
+        /* Re-apply/Adjust glass effect properties for mobile */
+        background: rgba(255, 255, 255, 0.15); /* Slightly increased opacity */
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px); /* Add vendor prefix */
     }
 
     .glass-text-container {
@@ -653,6 +657,10 @@ footer a:hover {
 
     .btn {
         padding: 8px 15px;
+        /* Re-apply/Adjust glass effect properties for mobile */
+        background: rgba(255, 255, 255, 0.15); /* Slightly increased opacity */
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px); /* Add vendor prefix */
     }
 
     .pub-list li,
