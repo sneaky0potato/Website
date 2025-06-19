@@ -1,0 +1,599 @@
+/* General Body and Text */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url('../assets/bg_random_walk.gif');
+    background-repeat: repeat;
+    background-size: auto;
+    background-color: #000; /* Fallback for when GIF doesn't load or is disabled */
+    color: #fff; /* All text white */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+/* Header and Navigation */
+header {
+    background: rgba(255, 255, 255, 0.1); /* Light translucent background */
+    backdrop-filter: blur(5px); /* Frosty glass effect */
+    color: #fff;
+    padding: 1rem 0;
+    border-bottom: rgba(0, 0, 0, 0.3) 3px solid;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    transition: background 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+header h1 {
+    float: left;
+    margin: 0;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+    float: right;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+header a:hover {
+    color: #77aaff;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 2px 5px;
+    backdrop-filter: blur(2px); /* Subtle blur on hover for glass effect */
+}
+
+/* Hero Section (Bio) */
+.hero {
+    background: transparent;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.bio-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile-image img {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border: 5px solid rgba(0, 0, 0, 0.3);
+}
+
+.bio-text {
+    text-align: left;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.1); /* Light translucent background */
+    backdrop-filter: blur(5px); /* Frosty glass effect */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.bio-text h2 {
+    margin-top: 0;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.bio-text h3 {
+    color: #eee;
+}
+
+.bio-text p {
+    margin-bottom: 15px;
+}
+
+.research-box-link {
+    display: block; /* Make the entire container clickable */
+    text-decoration: none; /* Remove underline from the link */
+    color: #fff; /* Ensure text remains white */
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.1); /* Initial glass background */
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
+}
+
+.research-box-link:hover {
+    background: rgba(255, 255, 255, 0.25); /* More opaque white for shine */
+    backdrop-filter: blur(8px); /* Slightly more blur on hover */
+}
+
+.research-box-link .read-more-text {
+    color: #77aaff; /* Highlight 'Read More' text */
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.btn {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1); /* Glass background for button */
+    backdrop-filter: blur(5px);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.25); /* Shine on hover */
+    backdrop-filter: blur(8px); /* Slightly more blur on hover */
+}
+
+.interests-education {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.interests, .education {
+    flex: 1;
+    min-width: 280px;
+    background: rgba(255, 255, 255, 0.1); /* Light translucent background */
+    backdrop-filter: blur(5px); /* Frosty glass effect */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+.interests h3, .education h3 {
+    color: #fff;
+    margin-top: 0;
+    border-bottom: 2px solid #555;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.interests ul,
+.education ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.education ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.education li p {
+    margin: 5px 0;
+}
+
+.education li p strong {
+    display: block;
+}
+
+/* Section Spacing */
+.section-spacing {
+    padding: 40px 0;
+    border-bottom: 1px solid #555;
+    text-align: center;
+    background: transparent;
+}
+
+.section-spacing h2 {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+/* Grid Containers for Publications and Talks */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.publication-item,
+.talk-item {
+    background: rgba(255, 255, 255, 0.1); /* Light translucent background */
+    backdrop-filter: blur(5px); /* Frosty glass effect */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    color: #fff;
+}
+
+.publication-item img,
+.talk-item img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.publication-item h3,
+.talk-item h3 {
+    color: #fff;
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 15px;
+    color: #77aaff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+    background: rgba(255, 255, 255, 0.1); /* Glass shine */
+    border-radius: 5px;
+    padding: 2px 5px; /* Subtle padding for the shine */
+    backdrop-filter: blur(2px);
+    color: #fff; /* Ensure text remains white on hover */
+}
+
+/* Recent Publications List */
+.pub-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.pub-list li {
+    background: rgba(255, 255, 255, 0.1); /* Light translucent background */
+    backdrop-filter: blur(5px); /* Frosty glass effect */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 15px;
+}
+
+.pub-list li p {
+    margin: 0 0 10px 0;
+    color: #fff;
+}
+
+.pub-list li .pub-links a {
+    display: inline-block;
+    background: #555; /* Darker background for links */
+    color: #fff; /* White text for links */
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: background 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
+}
+
+.pub-list li .pub-links a:hover {
+    background: rgba(255, 255, 255, 0.1); /* Glass shine */
+    backdrop-filter: blur(2px);
+    border-radius: 5px;
+    padding: 5px 10px; /* Ensure padding consistency */
+    color: #fff; /* Ensure text remains white on hover */
+}
+
+/* News Section */
+.news-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.news-list li {
+    background: rgba(255, 255, 255, 0.1); /* Light translucent background */
+    backdrop-filter: blur(5px); /* Frosty glass effect */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.news-list li a {
+    font-weight: bold;
+    color: #77aaff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: background 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
+}
+
+.news-list li a:hover {
+    text-decoration: underline;
+    background: rgba(255, 255, 255, 0.1); /* Glass shine */
+    border-radius: 5px;
+    padding: 2px 5px; /* Subtle padding for the shine */
+    backdrop-filter: blur(2px);
+    color: #fff; /* Ensure text remains white on hover */
+}
+
+.news-list li .news-date {
+    display: block;
+    font-size: 0.85em;
+    color: #aaa;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #77aaff;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    background: rgba(255, 255, 255, 0.1); /* Glass shine */
+    border-radius: 3px;
+    padding: 2px 5px;
+    backdrop-filter: blur(2px);
+    color: #fff; /* Ensure text remains white on hover */
+}
+
+
+/* Experience Page Specific Styles */
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.experience-item {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Keep shadow for depth */
+    text-align: left;
+    color: #fff;
+}
+
+.experience-item h4 {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.experience-item p {
+    font-size: 0.95em;
+    color: #eee;
+    margin-bottom: 10px;
+}
+
+.experience-item ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.experience-item li {
+    margin-bottom: 5px;
+}
+
+
+/* Project Page Specific Styles */
+.project-item {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    text-align: left;
+    color: #fff;
+}
+
+.project-item img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.project-item h3 {
+    color: #fff;
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.project-item p {
+    margin-bottom: 15px;
+    color: #eee;
+}
+
+
+/* Teaching Page Specific Styles */
+.teaching-item {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    text-align: left;
+    color: #fff;
+}
+
+.teaching-item img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.teaching-item h3 {
+    color: #fff;
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.teaching-item p {
+    margin-bottom: 15px;
+    color: #eee;
+}
+
+
+/* Contact Info in Bio Section */
+.contact-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: #77aaff; /* Changed to #77aaff for all text links */
+    text-decoration: none;
+    transition: background 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
+}
+
+.contact-info a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    padding: 2px 5px;
+    text-decoration: underline;
+    backdrop-filter: blur(2px);
+    color: #fff; /* Ensure text remains white on hover */
+}
+
+/* General List Styling for new sections */
+.glass-text-container {
+    background: rgba(255, 255, 255, 0.1); /* Light translucent background */
+    backdrop-filter: blur(5px); /* Frosty glass effect */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin: 20px auto; /* Center it */
+    max-width: 800px; /* Limit width for readability */
+    text-align: left;
+}
+
+.bullet-list {
+    list-style: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bullet-list li {
+    margin-bottom: 8px;
+}
+
+.two-col-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px 20px;
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Main Content Layout (Two-Column) */
+.main-content-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
+    gap: 30px; /* Space between columns */
+    padding: 20px; /* Padding for the wrapper */
+    justify-content: center;
+}
+
+.sidebar-column {
+    flex: 1;
+    min-width: 300px; /* Minimum width for the sidebar */
+    max-width: 400px; /* Maximum width for the sidebar */
+}
+
+.main-column {
+    flex: 2;
+    min-width: 500px; /* Minimum width for the main content */
+    max-width: 800px; /* Maximum width for the main content */
+}
+
+/* Adjustments for elements within the new columns */
+.hero-sidebar {
+    background: transparent; /* Main background handles this */
+    color: #fff;
+    padding: 0; /* Remove extra padding, handled by inner elements */
+    text-align: center;
+}
+
+.hero-sidebar .bio-content {
+    flex-direction: column; /* Ensure stacked within sidebar */
+    gap: 20px;
+}
+
+/* Responsive Adjustments */
+
+@media (max-width: 768px) {
+    header h1,
+    header ul {
+        float: none;
+        text-align: center;
+    }
+
+    header li {
+        padding: 0 10px;
+    }
+
+    .bio-content {
+        flex-direction: column;
+    }
+
+    .interests-education {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .interests, .education {
+        width: 100%;
+    }
+}
