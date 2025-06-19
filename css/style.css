@@ -578,22 +578,96 @@ footer a:hover {
     header ul {
         float: none;
         text-align: center;
+        width: 100%;
     }
 
     header li {
-        padding: 0 10px;
+        display: block;
+        padding: 5px 0;
+    }
+
+    .main-content-wrapper {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px; /* Reduce overall padding for mobile */
+    }
+
+    .sidebar-column,
+    .main-column {
+        min-width: unset;
+        max-width: unset;
+        width: 100%;
     }
 
     .bio-content {
         flex-direction: column;
+        align-items: center;
     }
 
     .interests-education {
         flex-direction: column;
         align-items: center;
+        gap: 20px;
     }
 
     .interests, .education {
         width: 100%;
+        min-width: unset;
+    }
+
+    .glass-text-container {
+        padding: 15px;
+        border-radius: 8px;
+        margin: 10px auto;
+    }
+
+    .section-spacing {
+        padding: 20px 0;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr; /* Stack items in grid */
+        gap: 20px;
+    }
+
+    .profile-image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .bio-text h2 {
+        font-size: 2rem;
+    }
+
+    .btn {
+        padding: 8px 15px;
+    }
+
+    .pub-list li,
+    .news-list li {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .pub-list li .pub-links a {
+        padding: 3px 6px;
+        margin-right: 5px;
+        font-size: 0.8em;
+    }
+
+    .news-list li a {
+        font-size: 1em;
+    }
+
+    .news-list li .news-date {
+        font-size: 0.8em;
+    }
+
+    .contact-info p {
+        font-size: 0.9em;
+    }
+
+    footer {
+        padding: 15px 0;
     }
 }
