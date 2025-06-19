@@ -359,22 +359,6 @@ footer {
     font-size: 0.9em;
 }
 
-footer a {
-    color: #77aaff;
-    text-decoration: none;
-    transition: background 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
-}
-
-footer a:hover {
-    text-decoration: underline;
-    background: rgba(255, 255, 255, 0.1); /* Glass shine */
-    border-radius: 3px;
-    padding: 2px 5px;
-    backdrop-filter: blur(2px);
-    color: #fff; /* Ensure text remains white on hover */
-}
-
-
 /* Experience Page Specific Styles */
 .experience-list {
     display: flex;
@@ -622,9 +606,10 @@ footer a:hover {
         width: 100%;
         min-width: unset;
         /* Re-apply/Adjust glass effect properties for mobile */
-        background: rgba(255, 255, 255, 0.15); /* Slightly increased opacity */
+        background: rgba(255, 255, 255, 0.1); /* Adjusted opacity */
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px); /* Add vendor prefix */
+        color: #fff; /* Ensure text is white */
     }
 
     .glass-text-container {
@@ -658,9 +643,10 @@ footer a:hover {
     .btn {
         padding: 8px 15px;
         /* Re-apply/Adjust glass effect properties for mobile */
-        background: rgba(255, 255, 255, 0.15); /* Slightly increased opacity */
+        background: rgba(255, 255, 255, 0.1); /* Adjusted opacity */
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px); /* Add vendor prefix */
+        color: #fff; /* Ensure text is white */
     }
 
     .pub-list li,
