@@ -577,16 +577,21 @@ footer a:hover {
     * {
         box-sizing: border-box;
     }
-    header h1,
-    header ul {
+    header h1 {
         float: none;
         text-align: center;
         width: 100%;
     }
+    header ul {
+        float: none;
+        text-align: center;
+        width: 100%;
+        padding: 0; /* Ensure padding is reset or controlled */
+    }
 
     header li {
-        display: block;
-        padding: 5px 0;
+        display: inline-block;
+        padding: 5px 10px; /* Adjust padding for horizontal layout */
     }
 
     .main-content-wrapper {
@@ -622,6 +627,10 @@ footer a:hover {
         padding: 15px;
         border-radius: 8px;
         margin: 10px auto;
+        /* Re-apply/Adjust glass effect properties for mobile */
+        background: rgba(255, 255, 255, 0.15); /* Slightly increased opacity */
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px); /* Add vendor prefix */
     }
 
     .section-spacing {
