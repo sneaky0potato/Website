@@ -574,6 +574,9 @@ footer a:hover {
 /* Responsive Adjustments */
 
 @media (max-width: 768px) {
+    * {
+        box-sizing: border-box;
+    }
     header h1,
     header ul {
         float: none;
