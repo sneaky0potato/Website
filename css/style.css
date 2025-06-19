@@ -605,11 +605,9 @@ footer {
     .interests, .education {
         width: 100%;
         min-width: unset;
-        /* Re-apply/Adjust glass effect properties for mobile */
-        background: rgba(255, 255, 255, 0.1); /* Adjusted opacity */
-        backdrop-filter: blur(5px);
-        -webkit-backdrop-filter: blur(5px); /* Add vendor prefix */
-        color: #fff; /* Ensure text is white */
+        /* Re-apply/Adjust glass effect properties for mobile - backdrop-filter removed for testing */
+        background: rgba(50, 50, 50, 0.4); /* Test: Darker, no blur */
+        color: #fff !important; /* Ensure text is white */
     }
 
     .glass-text-container {
@@ -642,11 +640,9 @@ footer {
 
     .btn {
         padding: 8px 15px;
-        /* Re-apply/Adjust glass effect properties for mobile */
-        background: rgba(255, 255, 255, 0.1); /* Adjusted opacity */
-        backdrop-filter: blur(5px);
-        -webkit-backdrop-filter: blur(5px); /* Add vendor prefix */
-        color: #fff; /* Ensure text is white */
+        /* Re-apply/Adjust glass effect properties for mobile - backdrop-filter removed for testing */
+        background: rgba(50, 50, 50, 0.4); /* Test: Darker, no blur */
+        color: #fff !important; /* Ensure text is white */
     }
 
     .pub-list li,
